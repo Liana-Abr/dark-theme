@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+:root{
+  --accent-dark: rgb(102, 102, 102);
+  --bg-dark: #342929;
+  --accent-light:rgb(102, 102, 102);
+  --bg-light:white;
+
+
+}
+
+
+.layout{
+  background-color:var(--bg-light);
+  height: 100vh;
+}
+
+.layout.dark{
+  background-color:var(--bg-dark);
+  height: 100vh;
+  color: rgb(102, 102, 102);
+}
+
+
+
+.layout.dark .App{
+  background-color: var(--bg-dark);
+}
+
+
+.layout.dark .trend{
+  background-color: var(--bg-dark);
+  color: var(--accent-light);
+  box-shadow: 1px 10px 20px black;
+}
+.layout.dark .product-text{
+  color: var(--accent-light);
+}
+.layout.dark span{
+  color: var(--accent-light);
+}
+.layout.dark .text-block2{
+  color: var(--accent-light);
+}
+
+
+.btn-theme{
+  color: var(--accent-light);
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+.layout.dark .btn-theme{
+  color: var(--accent-dark);
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
